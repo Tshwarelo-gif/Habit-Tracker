@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boarder-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #4d641836;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.summary,
+.form-section {
+    background: rgb(231, 230, 238);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+.summary p{
+    margin-top: 9px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+input,
+select,
+button {
+    padding:8px;
+    Font-size: 15px;
+}
+button {
+    cursor: pointer;
+}
+#errorMessage {
+    color:red;
+    font-weight: bold;
+}
+.habit-card {
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+}
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.delete-btn {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+}

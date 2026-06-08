@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Habit Traker</title>
+        <link rel="stylesheet" href="./styles.css"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Habit Tracker</h1>
+
+            <section class="summary">
+                <h2>Progress Summary</h2>
+                <p>Total habits: <span id="totalhabits">0</span></p>
+                <p>Done Today: <span id="donehabits">0</span></p>
+                <p>Completion Rate: <span id="completinRate">0%</span></p>
+            </section>
+
+            <section class="form-section">
+                <h2>Add New Habit</h2>
+                <form id="Habitform">
+                    <label for="habitName">Habit Name</label>
+                    <input 
+                          type="text"
+                          id="habitName"
+                          placeholder="Enter Habit Name">
+                    <label for="targetDays">Target Days Per Week</label>
+                    <input
+                          type="number"
+                          id="targetDays"
+                          min="1"
+                          max="7"
+                    >
+                    <label for="category">category</label>
+                    <select id="category">
+                        <option value="">Select Category</option>
+                        <option value="Health">Health</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="learning">Learning</option>
+                        <option value="Productivity">Productivity</option>
+                    </select>
+                    <div id="errorMessage"></div>
+                    <button type="Submit">Add Habit</button>
+
+                </form>
+            </section>
+            <section>
+                <h2>Your habits</h2>
+                <div id="habitList"></div>
+            </section>
+
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
